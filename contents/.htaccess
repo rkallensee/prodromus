@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule http-bind/ http://caffe.in:5280/http-bind/ [P]
+</IfModule>

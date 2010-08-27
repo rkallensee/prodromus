@@ -1,0 +1,153 @@
+div#prodromus {
+    width: 400px;
+    border: 1px solid #C9C9C9;
+    margin: 10px auto 20px auto;
+    padding: 10px;
+    font-family: Arial,Helvetica,sans-serif,"sans serif";
+    background-color: #F9F9F9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    overflow: hidden;
+    zoom: 1; /* uh, dirty ie6 hack... */
+}
+
+div#prodromus div.prodromus-clear {
+    clear: both;
+}
+
+div#prodromus form {
+    margin: 0;
+    padding: 0;
+}
+
+div#prodromus div#prodromus-login {
+    overflow: hidden;
+    position: relative;
+}
+
+div#prodromus div#prodromus-login label,
+div#prodromus div#prodromus-login span#prodromus-usernameDisplay {
+    font-size: 0.9em;
+    line-height: 22px;
+    margin: 0px 6px;
+}
+
+div#prodromus div#prodromus-login span#prodromus-usernameDisplay {
+    font-weight: bold;
+    margin: 0;
+}
+
+div#prodromus div#prodromus-login label,
+div#prodromus div#.prodromus-login input#prodromus-username,
+div#prodromus div#prodromus-login span#prodromus-usernameDisplay {
+    float: left;
+    vertical-align: middle;
+}
+
+div#prodromus div#prodromus-login input#prodromus-connect {
+    float: right;
+    margin-right: 5px;
+}
+
+div#prodromus div#prodromus-messaging {
+    position: relative;
+    overflow: hidden;
+    zoom: 1; /* uh, dirty ie6 hack... */
+}
+
+div#prodromus div#prodromus-log {
+    height: 300px;
+    width: 388px;
+    border: 1px solid #999999;
+    background-color: #FFFFFF;
+    overflow: auto;
+    margin: 5px;
+    padding-top: 10px;
+    font-size: 0.8em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    position: relative;
+}
+
+div#prodromus div#prodromus-log div.message {
+    width: 350px;
+    background: transparent url(../images/prodromus_bubble_top.png) left top no-repeat;
+    padding-top: 9px;
+    margin: 0 auto;
+}
+
+div#prodromus div#prodromus-log div.message a:link,
+div#prodromus div#prodromus-log div.message a:visited,
+div#prodromus div#prodromus-log div.message a:hover,
+div#prodromus div#prodromus-log div.message a:active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+div#prodromus div#prodromus-log div.message a:link,
+div#prodromus div#prodromus-log div.message a:visited {
+    color: #C64100;
+}
+
+div#prodromus div#prodromus-log div.message a:hover,
+div#prodromus div#prodromus-log div.message a:active {
+    color: #333333;
+    background-color: #EAEAEA;
+}
+
+div#prodromus div#prodromus-log div.messageIn {
+    color: #444444;
+}
+
+div#prodromus div#prodromus-log div.messageOut {
+    color: #888888;
+}
+
+div#prodromus div#prodromus-log div.messageSystem {
+    color: #BBBBBB;
+}
+
+div#prodromus div#prodromus-log div.message span.msgText {
+    display: block;
+    font-weight: bold;
+    background: #E0E1E1 url(../images/prodromus_bubble_content.png) left top no-repeat;
+    padding: 0px 12px;
+}
+
+div#prodromus div#prodromus-log div.message span.msgPerson {
+    display: block;
+    background: transparent url(../images/prodromus_bubble_bottom.png) left top no-repeat;
+    height: 25px;
+    padding: 12px 0 0 50px;
+    font-size: 0.8em;
+}
+
+div#prodromus div#prodromus-log div.message span.msgPerson span.msgTime {
+    color: #AAAAAA;
+}
+
+div#prodromus div#prodromus-messaging textarea#prodromus-message {
+    width: 388px;
+    border: 1px solid #999999;
+    margin: 5px 5px 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    position: relative;
+}
+
+div#prodromus div#prodromus-messaging input#prodromus-sendmessage {
+    float: right;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0px 10px;
+    margin: 7px 5px 0 0;
+}
+
+
