@@ -21,7 +21,8 @@
  * PRODROMUS uses jQuery, which is available under the MIT or GPL Version 2 
  * licenses. Secondly this little piece of software uses the great Strophe.js
  * library which is available under the MIT license, except for two functions
- * which are licensed as public domain and BSD.
+ * which are licensed as public domain and BSD. Additionally a Date.format
+ * function is used which is available under the MIT license.
  *
  * jQuery: http://jquery.com 
  * Strophe.js: http://code.stanziq.com/strophe/
@@ -52,7 +53,7 @@ Prodromus.config = {
     // XMPP server to connect to (should be accessible via BOSH service).
     // Authentication gets done via SASL ANONYMOUS, so you should use a 
     // server which supports that authentication type.
-    'XMPP_SERVER': "pubapps." + "kallensee" + ".name",
+    'XMPP_SERVER': "xmpp.wonderland.lit",
 
     // BOSH service (should be absolute or relative path). This might be a
     // tricky part due to the JavaScript same origin policy. The easiest
@@ -62,20 +63,20 @@ Prodromus.config = {
     'BOSH_SERVICE': "http-bind/",
     
     // JID of receiver
-    'RECEIVER': "raphael" + "@k" + "allensee." + "name",
+    'RECEIVER': "alice@wonderland.lit",
     
     // name of receiver
-    'RECEIVERNAME': "Raphael",
+    'RECEIVERNAME': "Alice",
     
     // leave this empty or fill in a default name
     'SENDERNAME': '',
     
     // date format, syntax like php's date function
-    // (for US something like 'm-d-Y H:i:s')
-    'DATEFORMAT': 'd.m.Y H:i:s',
+    // (for US something like 'm-d-Y H:i:s', Germany like 'd.m.Y H:i:s')
+    'DATEFORMAT': 'm-d-Y H:i:s',
     
     // language, currently supported: 'de' and 'en'
-    'LANGUAGE': 'de'
+    'LANGUAGE': 'en'
 }
 
 $(document).ready( function() {
@@ -376,6 +377,7 @@ Prodromus.t9n = {
 
 // Simulates PHP's date function
 // @see http://jacwright.com/projects/javascript/date_format
+// Licensed under a MIT license.
 Date.prototype.format = function(format) {
 	var returnStr = '';
 	var replace = Date.replaceChars;

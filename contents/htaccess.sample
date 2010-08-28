@@ -1,4 +1,4 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteRule http-bind/ http://xmpp-server.lit:5280/http-bind/ [P]
+    RewriteRule http-bind/ http://xmpp.wonderland.lit:5280/http-bind/ [P]
 </IfModule>
