@@ -25,17 +25,17 @@ Another requirement is a XMPP server with SASL anonymous enabled.
 Installation
 ------------
 
-# [Download PRODROMUS](http://forge.webpresso.net/projects/prodromus/files).
-# Copy the files to your web server.
-# Ensure a BOSH endpoint / [connection manager](http://metajack.im/2008/09/08/which-bosh-server-do-you-need/)
-  is accessible under the same domain you access PRODROMUS. If you're using Apache you can enable mod_proxy,
-  rename the source:contents/htaccess.sample to .htaccess and adjust the URL of your BOSH-Service. ejabberd,
-  for example, already comes with built-in BOSH support.
-# Open contents/prodromus.js and configure PRODROMUS to fit your needs. The following values are important:
-  XMPP_SERVER, BOSH_SERVICE and RECEIVER. You can also configure the date format and language, currently English
-  ("en") and German ("de") are supported.
-# You should be ready to go. Try it by opening prodromus.html in your browser. You can integrate PRODROMUS into
-  your website later.
+1. [Download PRODROMUS](http://forge.webpresso.net/projects/prodromus/files).
+2. Copy the files to your web server.
+3. Ensure a BOSH endpoint / [connection manager](http://metajack.im/2008/09/08/which-bosh-server-do-you-need/)
+   is accessible under the same domain you access PRODROMUS. If you're using Apache you can enable mod_proxy,
+   rename the source:contents/htaccess.sample to .htaccess and adjust the URL of your BOSH-Service. ejabberd,
+   for example, already comes with built-in BOSH support.
+4. Open contents/prodromus.js and configure PRODROMUS to fit your needs. The following values are important:
+   XMPP_SERVER, BOSH_SERVICE and RECEIVER. You can also configure the date format and language, currently English
+   ("en") and German ("de") are supported.
+5. You should be ready to go. Try it by opening prodromus.html in your browser. You can integrate PRODROMUS into
+   your website later.
 
 
 Bug tracker
